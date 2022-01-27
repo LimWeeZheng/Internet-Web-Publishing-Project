@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" href="bootstrap.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylefooter.css">
+<style>
+body{overflow-x:hidden;}
+.menu{list-style-type: none;
+		   height:45px;
+		   margin: 0;
+		   padding: 0;
+		   overflow: hidden;
+		   background-color: #333;
+	       position: -webkit-sticky; /* Safari */
+		   position: static;
+		   top: 0;}
+		#menu-btn{float: left;}
+		.menu a {display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;}
+		.menu a:hover {background-color: #111;}
+		.active {background-color: #4CAF50;}
+			 
+body {
+    background-color:skyblue;
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+    color: #000;
+	align:center;
+}
+
+.user-profile .card {
+    border-radius: 10px;
+	
+}
+.table .card {margin-left:100px;}
+.user-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+.user-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.user-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+
+.user-profile .table th,
+.user-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+</style>
+</head>
+</body>
+<ul class="menu">
+		<li id="menu-btn"><a href="user_index.html">Home</a></li>
+		<li id="menu-btn"><a href="user_rooms.html">Room</a></li>
+		<li id="menu-btn"><a href="user_about.html">About Us</a></li>
+		<li id="menu-btn"><a href="user_contact.html">Contact Us</a></li>		
+		<li style="float:right;"><a href="index.html">Log Out</a></li>
+		<li style="float:right;"><a href="user_cart.html"><img src="icon/cart.png" width="25px" height="25px"></a></li>
+		<li style="float:right;"><a class="active" href="dashboard.html"><img src="icon/user1.png" width="25px" height="25px"></a></li>
+	</ul>
+	<h2 style="text-align:center; color:white; margin:20px; font-family:san-serif; font-weight:bold;">User Dashboard</h2>
+			<div class="user-profile py-4">
+			<a style="margin-left:1100px; color:blue;" href="#"><i class="fa fa-edit mr-1"></i>Edit</a>
+  <div class="container" style="margin-left:25%;">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card shadow-sm">
+          <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+          </div>
+		  <tr>
+          <div class="card-body pt-0">
+            <table class="table table-bordered">
+			<td rowspan="6"><div class="card-header bg-transparent text-center">
+            <img class="profile_img" src="img/about/seong.jpeg" alt="user_image">
+            <h3>Wee Chian Seong</h3>
+          </div>
+          <div class="card-body">
+            <p class="mb-0"><strong class="pr-1">Email:</strong>hochunshian29@gmail.com</p></td></tr>
+              <tr>
+                <th width="30%">Phone Number:</th>
+                <td width="2%">:</td>
+                <td>017-9681149</td>
+              </tr>
+              <tr>
+                <th width="30%">Date of Birth: 	</th>
+                <td width="2%">:</td>
+                <td>29/01/2002</td>
+              </tr>
+              <tr>
+                <th width="30%">Gender</th>
+                <td width="2%">:</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <th width="30%">Address: </th>
+                <td width="2%">:</td>
+                <td>Kota Bharu, Kelantan.</td>
+              </tr>
+              <tr>
+                <th width="30%">Poscode:</th>
+                <td width="2%">:</td>
+                <td>82450</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+          <div style="height: 26px"></div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container" style="margin-left:19%;">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="card shadow-sm" style="border-radius:10px;">
+          <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0" style="text-align:center;">Booking History</h3>
+          </div>
+          <div class="card-body pt-0">
+            <table class="table table-bordered" style="font-size:12pt; text-align:center;">
+				<thead style="text-align:center; width:800px;">
+					<tr>
+						<th>Booking ID</th>
+						<th>Room Type</th>
+						<th>Total Numbers</th>
+						<th>Quantity</th>
+						<th>Check-in Date</th>
+						<th>Check-out Date</th>
+						<th>Check-in Time</th>
+						<th>Total Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>BKG-1005</td>
+						<td>Signature Room</td>
+						<td>12</td>
+						<td>12</td>
+						<td>20-09-2021</td>
+						<td>21-09-2021</td>
+						<td>1.00pm</td>
+						<td>$9000</td>
+					</tr>
+				</tbody>
+            </table>
+          </div>
+        </div>
+          <div style="height: 26px"></div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+ <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img src="img/logo.png" width="120px" height="120px" style="float:left;">
+          <span class="logo_name" style="font-size:40px;">Marina Bay</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/MaldivesInsiderTravel/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/visitmaldives?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/visitmaldives/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/watch?v=JXGd7PB4UYY"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+	          <ul class="box">
+          <li class="link_name">Address</li>
+          <li><p style="color:#fff; font-size:14px;">10 Bayfront Ave,Gaafu Dhaalu Atoll Maguhdhuvaa Island, Maldives</p></li>
+          <li><a href="https://www.google.com/maps/place/Maguhdhuvaa/@0.2778,73.354649,17z/data=!3m1!4b1!4m15!1m9!3m8!1s0x3b4aa21037b85ff9:0x5f4d2949e658a8a8!2sAyada+Maldives!5m2!4m1!1i2!8m2!3d0.2787213!4d73.3572387!3m4!1s0x3b4aa2102f6e23b9:0x1fd632e4acd3dc2!8m2!3d0.2774626!4d73.3568696">Get Direction</a></li>
+        </ul>
+		        <ul class="box">
+          <li class="link_name">Reservation</li>
+          <li><a href="tel:+65 6688 8866"><img src="icon/phone.png" width="30px" height="30px" style="float:left;">+65 6688 8866</li>
+          <li><a href="mailto:reservation@marinabay.com"><img src="icon/mail.png" width="30px" height="30px" alt="" style="float:left;">reservation@marinabay.com</a></li>
+        </ul>
+		
+        <ul class="box">
+          <li class="link_name">Hotel</li>
+          <li><a href="user_index.html">Home</a></li>
+          <li><a href="user_rooms.html">Rooms</a></li>
+          <li><a href="user_about.html">About us</a></li>
+          <li><a href="user_contact.html">Contact us</a></li>
+		  <li><a href="user_comment&rating.html" target="_blank">Reservation&Feedback</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe Newsletter</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="user_index.html">Marina Bay.</a></span>
+        <span class="policy_terms">
+          <a href="user_privacy.html" target="_blank">Privacy policy</a>
+          <a href="user_term&condition.html" target="_blank">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

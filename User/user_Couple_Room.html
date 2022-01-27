@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Couple Room</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="room_detail_slide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylefooter.css">
+	<style>
+				.roomtitle p{padding-left:10px;
+			font-family:Bookman Old Style;
+			font-size:30pt;
+			font-weight:bold;
+			text-align:center;
+			margin-bottom:20px;}
+		body {background-color:skyblue;
+		      background-attachment:scroll;
+			  margin:0;
+			  padding:0;
+			  }
+		#spec1{width:600px;
+			   font-size:19pt;
+			   float:left;
+			   padding-left:150px;
+			   margin-right:100px;
+			   box-sizing: border-box;}
+		#spec2{width:620px;
+			   font-size:19pt;
+			   float:left;
+			   padding-left:100px;
+			   box-sizing: border-box;}
+		
+		.menu{list-style-type: none;
+		   height:45px;
+		   margin: 0;
+		   padding: 0;
+		   overflow: hidden;
+		   background-color: #333;
+	       position: -webkit-sticky; /* Safari */
+		   position: static;
+		   top: 0;}
+		#menu-btn{float: left;}
+		.menu a {display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;}
+		.menu a:hover {background-color: #111;}
+		.active {background-color: #4CAF50;}
+		.slideshow-container img{border-radius:10px;}
+		
+		#bullet{list-style-image:url(icon/star.png);}
+		
+			/* Button used to open the contact form - fixed at the bottom of the page */
+		.open-button {
+						background-color: black;
+						color: white;
+						  padding: 16px 20px;
+						  border: 2px solid white;
+						  cursor: pointer;
+						  opacity: 0.8;
+						  position:fixed;
+						  bottom: 23px;
+						  right: 28px;
+						  width: 180px;
+						  border-radius:5px;
+						  font-weight:bold;
+						}
+		.open-button:hover{background-color:red;
+				font-weight:bold;}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 2px solid #f1f1f1;
+  z-index: 9;
+  border-radius:5px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 530px;
+  padding: 10px;
+  background-color: rgba(54, 62, 80, 0.95);
+  color:white;
+  font-size:12pt;
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+   border-radius:5px;
+   font-weight:bold;
+}
+.form-container .btn:hover{background-color:black;
+								border:2px solid white;}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  border-radius:5px;
+  font-weight:bold;
+}
+.form-container .cancel:hover{background-color:black;
+								border:2px solid white;}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+p.check{ display:inline-block;margin-right:10px;
+         display:inline-block;
+	     text-align:left;
+		 margin-left:60px;
+		}
+a.sign-up{
+		  background-color:green;
+		  border-width:3px;
+		  height:30px;
+		  border-color:red;
+		  width:100px;
+		  overflow:auto;
+		  text-align:center;
+		  font-weight:bold;
+		  font-size:20px;
+		  text-decoration:none;
+		  color:white;
+		  border-radius:5px;
+		  margin-left:120px;
+		  padding-left:100px;
+		  padding-right:100px;}	
+	</style>
+</head>
+<body>
+	<ul class="menu">
+		<li id="menu-btn"><a href="user_index.html">Home</a></li>
+		<li id="menu-btn"><a class="active" href="user_rooms.html">Room</a></li>
+		<li id="menu-btn"><a href="user_about.html">About Us</a></li>
+		<li id="menu-btn"><a href="user_contact.html">Contact Us</a></li>	
+		<li style="float:right;"><a href="index.html">Log Out</a></li>
+		<li style="float:right;"><a href="user_cart.html"><img src="icon/cart.png" width="25px" height="25px"></a></li>
+		<li style="float:right;"><a href="dashboard.html"><img src="icon/user1.png" width="25px" height="25px"></a></li>
+	</ul>
+
+	<div class="roomtitle">
+	<p>Couple Room</p>
+		</div>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="img/cou.jpg" style="width:1000px; height:500px;">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="img/cou_room.jfif" style="width:1000px; height:500px;">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="img/cou_room1.jfif" style="width:1000px; height:500px;">
+		</div>
+	</div>
+	<br>
+	<div>
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+	<br>
+	<table>
+		<tr>
+			<td>
+				<div id="spec1">
+					<h3 style="padding-left:30px;">Inside Your Room</h3>
+					<ul type="none">
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;From 40 square metres</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;1 King or 2 Single beds</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Spacious bathroom with glass-enclosed shower and deep-soaking bathtub</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Luxury bathroom amenities</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Waffle bathrobes</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Hairdryer</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;42" interactive flatscreen TV</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Cable channels (free) and movies on demand (charges apply)</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Executive work desk</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;In-room safe</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Iron and ironing board</li>
+						<li><i class="fas fa-check-square"></i>&nbsp;&nbsp;Non-smoking and smoking guest rooms available</li>
+					</ul>
+				</div>
+			</td>
+			<td>
+				<div id="spec2">
+					<h3 style="padding-left:30px;">Included With Your Stay</h3>
+					<ul type="none">				
+						<li><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Complimentary selections of minibar items</li>
+						<li><i class="fas fa-check-circle"></i>&nbsp;&nbsp;24 hour in-room dining service</li>
+						<li><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Access to the stunning Infinity Pool</li>
+						<li><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Free entry to spa and wellness</li>
+						<li><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Maximum of 3 guests per room 
+							(minimum one adult; any combination of adults + children not exceeding 3 guests total).
+							3rd adult charge will apply. 
+							(Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. 
+							Fees apply should a rollaway bed be required.)</li>
+						<li><i class="fas fa-check-circle"></i>&nbsp;&nbsp;Breakfast is included for this room type unless the Bed and Breakfast offer has been selected.</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+<a href="user_rooms.html"><img src="icon/back.png" width="80px" height="50px" style="padding-top:10px; margin-left:20px;"></a>
+	<a href="user_index.html"><img src="icon/home.png" width="70px" height="70px" style="padding-top:10px; margin-left:620px;"></a>
+	<button class="open-button" onclick="openForm()">Book Now</button>
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1 style="font-family:arial narrow; text-align:center;">Book Room</h1>
+
+    <label for="email"><b></b></label>
+	<p class="check">Name:<input type="text" name="user_name" style="width:100px;"></p>
+	<p class="check">Phone No:<input type="text" name="user_phoneno" style="width:80px;"></p>
+	<p class="check">Email:<input type="text" name="user_email"  style="width:100px;"></p>
+	<p class="check">Quantity :<input type="number" name="room_quantity"  style="width:100px; min="1" max="50" "></p>
+	<br>
+    <p class="check"> Check-in Date:<br><input type="date" name="arrival_date" placeholder="Arrival Date" size="50"> </p>
+	<p class="check"> Check-in Time :<br><input type="time" name="check_in time" placeholder="Number Adult" size="50"></p>
+	<br>
+	<p class="check"> Check-out Date<br><input type="date" name="departure_date" placeholder="Departure Date" size="50" > </p>
+	<p class="check"> Check-out Time :<br><input type="time" name="check_out time" placeholder="Number Adult" size="50"></p>
+    <p class="check">Number of Adults:</p>
+	<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+	
+	<p class="check">Number of Children</p>	
+	<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+	
+	<p class="check">Bed Type:</p>
+	<select>
+		<option style="font-size:15px;">King Bed</option>
+		<option style="font-size:15px;">Single Bed</option>
+	</select>
+	
+	
+    <a href="user_cart.html"><button type="button" class="btn">Add Cart</button></a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+</body>
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img src="img/logo.png" width="120px" height="120px" style="float:left;">
+          <span class="logo_name" style="font-size:40px;">Marina Bay</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/MaldivesInsiderTravel/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/visitmaldives?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/visitmaldives/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/watch?v=JXGd7PB4UYY"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+	          <ul class="box">
+          <li class="link_name">Address</li>
+          <li><p style="color:#fff; font-size:14px;">10 Bayfront Ave,Gaafu Dhaalu Atoll Maguhdhuvaa Island, Maldives</p></li>
+          <li><a href="https://www.google.com/maps/place/Maguhdhuvaa/@0.2778,73.354649,17z/data=!3m1!4b1!4m15!1m9!3m8!1s0x3b4aa21037b85ff9:0x5f4d2949e658a8a8!2sAyada+Maldives!5m2!4m1!1i2!8m2!3d0.2787213!4d73.3572387!3m4!1s0x3b4aa2102f6e23b9:0x1fd632e4acd3dc2!8m2!3d0.2774626!4d73.3568696">Get Direction</a></li>
+        </ul>
+		        <ul class="box">
+          <li class="link_name">Reservation</li>
+          <li><a href="tel:+65 6688 8866"><img src="icon/phone.png" width="30px" height="30px" style="float:left;">+65 6688 8866</li>
+          <li><a href="mailto:reservation@marinabay.com"><img src="icon/mail.png" width="30px" height="30px" alt="" style="float:left;">reservation@marinabay.com</a></li>
+        </ul>
+		
+        <ul class="box">
+          <li class="link_name">Hotel</li>
+          <li><a href="user_index.html">Home</a></li>
+          <li><a href="user_rooms.html">Rooms</a></li>
+          <li><a href="user_about.html">About us</a></li>
+          <li><a href="user_contact.html">Contact us</a></li>
+		  <li><a href="user_comment&rating.html" target="_blank">Reservation&Feedback</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe Newsletter</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="user_index.html">Marina Bay.</a></span>
+        <span class="policy_terms">
+          <a href="user_privacy.html" target="_blank">Privacy policy</a>
+          <a href="user_term&condition.html" target="_blank">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

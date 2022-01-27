@@ -1,0 +1,221 @@
+.about{
+	margin:0;
+	padding:0;
+  font-family:"Times New Roman";
+	scroll-behaviour:smooth;
+}
+.firstsection{
+background-color: #363e50;
+
+	/* This will make the background that have
+	been added will be darken */
+	background-blend-mode:darken;
+	background-size:cover;
+	height:70vh;
+	
+}
+.box-main{
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	max-width:50%;
+	margin:auto;
+	height:80%;
+}
+.text-big{
+    font-family: 'Piazzolla';
+     font-weight: bold;
+    font-size: 40px; 
+    text-align:center;
+}
+
+.text-small{    
+    font-family: 'Sansita Swashed';
+    font-size: 17px;
+    text-align:center;
+}
+.ab1{
+  
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+background-color: #363e50;
+
+  position: relative;
+}
+
+.ab1::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background:grey;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+
+::selection{
+  background:grey;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  box-sizing:border-box;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+background-color:#861657;
+background-image:linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size:15px;
+  font-weight:bold;
+  color:black;
+}
+.card .content .media-iconss{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-iconss a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.media-iconss a:nth-child(1){
+  background: #4267B2;
+}
+.media-iconss a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.media-iconss a:nth-child(2){
+  background: #25D366;
+}
+.media-iconss a:nth-child(2):hover{
+  color: #25D366;
+  background: #fff;
+}
+.media-iconss a:nth-child(3){
+  background: #E1306C;
+}
+.media-iconss a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+background-color:#861657;
+background-image:linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+
+	
+	
+
+
+	

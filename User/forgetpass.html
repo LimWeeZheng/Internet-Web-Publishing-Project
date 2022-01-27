@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html>
+<head> <title> Login </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0px;}
+#main{
+	font-family:sans-serif;
+}
+#main:before{
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 110vh;
+	background-image: url(img/login.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+}
+.form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 470px;
+	padding: 80px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.form h2{margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	font-family:san-serif;
+	text-align: center;
+	text-transform: uppercase;
+  }	  
+	  
+img.logo{width:200px;
+    height:200px;
+	}
+	
+
+a.login{
+       width:200px;
+	   color:red;
+	   font-weight:bold;
+	   text-decoration:none;
+	   }
+a.login:hover{color:blue;}	     
+
+a.reset-button{
+		  background-color:green;
+		  height:35px;
+		  border-color:red;
+		  width:250px;
+		  overflow:auto;
+		  text-align:center;
+		  font-weight:bold;
+		  font-size:17px;
+		  text-decoration:none;
+		  color:white;
+		  border-radius:5px;
+		  }	
+a.forgotpass,small{font-size:15px;
+      color:white;
+	 }
+
+ 
+</style>
+</head>
+<body>
+<div id="main">
+<form class="form" name="login_form" action="">
+<center><img class="logo" src="img/logo.png">
+							<h2>Forgot Password?</h2>
+							<p class="detail"><input type="email" name="user_email" placeholder="Email" size="50" required></p>
+							<small>Enter your email to get a password reset link</small>
+							<p><a class="reset-button" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Reset Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+							<small>Remember your password? <a class="login" href="hotel_login.html">Login</a></small>
+						</div>					
+
+</form>
+</body>
+</html>

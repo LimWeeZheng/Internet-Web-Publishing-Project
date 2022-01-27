@@ -1,0 +1,260 @@
+<!--List of products/services page-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Rooms</title>
+	<link rel="stylesheet" href="rooms_header.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylefooter.css">
+	
+	<style>
+		body{background-color:skyblue;
+		     margin:0px;
+			 padding:0px;}
+		
+		#room{border:1px solid white;
+			  border-radius:10px;
+		      width:500px;
+			  background-color:white;
+			  padding:10px;
+			  overflow:auto;
+			  float:left;
+			  margin:50px;}
+		#room h2{color:#4d4d4d;}
+		p.view{background-color:#333;
+			   color:white;
+			   font-family:Verdana;
+			   font-size:13pt;
+			   text-align:center;
+			   text-transform:uppercase;
+			   border-radius:10px;
+			   height:25px;}
+	    a:link{text-decoration:none;}
+		p.view:hover{background-color:#cc99ff;
+					 color:black;}
+					 
+		.menu{list-style-type: none;
+		   height:45px;
+		   margin: 0;
+		   padding: 0;
+		   overflow: hidden;
+		   background-color: #333;
+	       position: -webkit-sticky; /* Safari */
+		   position: static;
+		   top: 0;}
+		#menu-btn{float: left;}
+		.menu a {display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;}
+		.menu a:hover {background-color: #111;}
+		.active {background-color: #4CAF50;}
+	</style>
+</head>
+<body>
+	<ul class="menu">
+		<li id="menu-btn"><a href="user_index.html">Home</a></li>
+		<li id="menu-btn"><a class="active" href="user_rooms.html">Room</a></li>
+		<li id="menu-btn"><a href="user_about.html">About Us</a></li>
+		<li id="menu-btn"><a href="user_contact.html">Contact Us</a></li>
+		<li style="float:right;"><a href="index.html">Log Out</a></li>
+		<li style="float:right;"><a href="user_cart.html"><img src="icon/cart.png" width="25px" height="25px"></a></li>
+		<li style="float:right;"><a href="dashboard.html"><img src="icon/user1.png" width="25px" height="25px"></a></li>
+	</ul>
+	
+	<section class="header-area">
+    <div style="width: 500%; display:flex;">
+		<div class="header_post">
+			<a href="user_index.html" target="_blank">
+				<img src="img/logo.png" alt="">
+			</a>
+			<h1>Marina Bay</h1>
+			<p>Just for you</p>
+        </div>
+        <div class="head">
+			<img src="img/male1.jpg" alt="">
+        </div>
+    </div>
+    </section>
+  
+	<div style="margin:50px; padding:30px;">
+		<h3>&nbsp; &nbsp;Available for all rooms:</h3>
+		<p>&nbsp;</p>
+		<table>
+			<tr>
+				<td width="250px" height="70px" align="center">
+					<img src="icon/wifi.png" alt="" width="50px" height="50px">
+				</td>
+				<td width="250px" align="center">
+					<img src="icon/dining.png" alt="" width="50px" height="50px">
+				</td>
+				<td width="250px" align="center">
+					<img src="icon/spa.png" alt="" width="50px" height="50px">
+				</td>
+				<td width="250px" align="center">
+					<img src="icon/swim.png" alt="" width="50px" height="50px">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;"><b>Free high-speed wi-fi</b></td>
+				<td style="text-align:center;"><b>24 hour in-room dining service</b></td>
+				<td style="text-align:center;"><b>Free spa & wellness</b></td>
+				<td style="text-align:center;"><b>Infinity Pool</b></td>
+			</tr>
+		</table>
+	</div>
+	<table>
+		<tr>
+			<td>
+				<div id="room">
+					<img src="img/sup.jpg" alt="" width="500px" height="400px">
+					<h2>Superior Room</h2>
+					<p><b>PRICE :</b> From $250/night</p>
+					<p><b>VIEW &nbsp;:</b> Beach</p>
+					<br>
+					<table>
+						<tr>
+							<td><img src="icon/bed.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;1 King or 2 Single beds</td>
+						</tr>
+						<tr>
+							<td><img src="icon/group.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;Max capacity: 2 guests</td>
+						</tr>
+					</table>
+					<br><br>
+					<a href="user_Superior_Room.html" target="_blank">
+						<p class="view">View room details ></p>
+					</a>
+				</div>
+			</td>
+			
+			<td>
+				<div id="room">
+					<img src="img/del.jpg" alt="" width="500px" height="400px">
+					<h2>Deluxe Room</h2>
+					<p><b>PRICE :</b> From $450/night</p>
+					<p><b>VIEW &nbsp;:</b> Ocean</p>
+					<br>
+					<table>
+						<tr>
+							<td><img src="icon/bed.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;1 King or 2 Single beds</td>
+						</tr>
+						<tr>
+							<td><img src="icon/group.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;Max capacity: 3 guests</td>
+						</tr>
+					</table>
+					<br><br>
+					<a href="user_Deluxe_Room.html" target="_blank">
+						<p class="view">View room details ></p>
+					</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="room">
+					<img src="img/cou.jpg" alt="" width="500px" height="400px">
+					<h2>Couple Room</h2>
+					<p><b>PRICE :</b> From $500/night</p>
+					<p><b>VIEW &nbsp;:</b> Ocean & Sky</p>
+					<br>
+					<table>
+						<tr>
+							<td><img src="icon/bed.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;1 King beds or 2 Single beds</td>
+						</tr>
+						<tr>
+							<td><img src="icon/group.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;Max capacity: 2 guests</td>
+						</tr>
+					</table>
+					<br><br>
+					<a href="user_Couple_Room.html" target="_blank">
+						<p class="view">View room details ></p>
+					</a>
+				</div>
+			</td>
+			<td>
+				<div id="room">
+					<img src="img/sign.jpg" alt="" width="500px" height="400px">
+					<h2>Signature Room</h2>
+					<p><b>PRICE :</b> From $750/night</p>
+					<p><b>VIEW &nbsp;:</b> Ocean, Beach & Sky</p>
+					<br>
+					<table>
+						<tr>
+							<td><img src="icon/bed.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;1 King and either 1 sofa bed, 3 single beds, or 2 king bed </td>
+						</tr>
+						<tr>
+							<td><img src="icon/group.png" alt="" width="50px" height="50px"></td>
+							<td>&nbsp; &nbsp;Max capacity: 3-4 guests</td>
+						</tr>
+					</table>
+					<br><br>
+					<a href="user_Signature_Room.html" target="_blank">
+						<p class="view">View room details ></p>
+					</a>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+<footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img src="img/logo.png" width="120px" height="120px" style="float:left;">
+          <span class="logo_name" style="font-size:40px;">Marina Bay</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/MaldivesInsiderTravel/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/visitmaldives?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/visitmaldives/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/watch?v=JXGd7PB4UYY"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+	          <ul class="box">
+          <li class="link_name">Address</li>
+          <li><p style="color:#fff; font-size:14px;">10 Bayfront Ave,Gaafu Dhaalu Atoll Maguhdhuvaa Island, Maldives</p></li>
+          <li><a href="https://www.google.com/maps/place/Maguhdhuvaa/@0.2778,73.354649,17z/data=!3m1!4b1!4m15!1m9!3m8!1s0x3b4aa21037b85ff9:0x5f4d2949e658a8a8!2sAyada+Maldives!5m2!4m1!1i2!8m2!3d0.2787213!4d73.3572387!3m4!1s0x3b4aa2102f6e23b9:0x1fd632e4acd3dc2!8m2!3d0.2774626!4d73.3568696">Get Direction</a></li>
+        </ul>
+		        <ul class="box">
+          <li class="link_name">Reservation</li>
+          <li><a href="tel:+65 6688 8866"><img src="icon/phone.png" width="30px" height="30px" style="float:left;">+65 6688 8866</li>
+          <li><a href="mailto:reservation@marinabay.com"><img src="icon/mail.png" width="30px" height="30px" alt="" style="float:left;">reservation@marinabay.com</a></li>
+        </ul>
+		
+        <ul class="box">
+          <li class="link_name">Hotel</li>
+          <li><a href="user_index.html">Home</a></li>
+          <li><a href="user_rooms.html">Rooms</a></li>
+          <li><a href="user_about.html">About us</a></li>
+          <li><a href="user_contact.html">Contact us</a></li>
+		  <li><a href="user_comment&rating.html" target="_blank">Reservation&Feedback</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe Newsletter</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="user_index.html">Marina Bay.</a></span>
+        <span class="policy_terms">
+          <a href="user_privacy.html" target="_blank">Privacy policy</a>
+          <a href="user_term&condition.html" target="_blank">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

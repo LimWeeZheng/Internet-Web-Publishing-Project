@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylefooter.css">
+	<style>
+		
+		h1{text-align:center;}
+		room{width:350px;
+			height:250px;
+			padding:10px;
+			}
+		
+		body{background-color:skyblue;}
+		
+		.menu{list-style-type: none;
+		   height:45px;
+		   margin: 0;
+		   padding: 0;
+		   overflow: hidden;
+		   background-color: #333;
+	       position: -webkit-sticky; /* Safari */
+		   position: static;
+		   top: 0;}
+		#menu-btn{float: left;}
+		.menu a {display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;}
+		.menu a:hover {background-color: #111;}
+		.active {background-color: #4CAF50;}
+		.size{width:350px;
+			  height:350px;}
+			  .button {
+  background-color: #4CAF50;
+  border: 1px solid black;
+  color: white;
+  padding: 15px 32px;
+  margin-right:10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float:right;
+  margin-top:20px;
+  border-radius:5px;
+}
+.button:hover {
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+
+	</style>
+</head>
+<body style="padding:0px; margin:0px; border-radius:2px;">
+	<ul class="menu">
+		<li id="menu-btn"><a  href="user_index.html">Home</a></li>
+		<li id="menu-btn"><a href="user_rooms.html">Room</a></li>
+		<li id="menu-btn"><a href="user_about.html">About Us</a></li>
+		<li id="menu-btn"><a href="user_contact.html">Contact Us</a></li>		
+		<li style="float:right;"><a href="index.html">Log Out</a></li>
+		<li style="float:right;"><a class="active" href="user_cart.html"><img src="icon/cart.png" width="25px" height="25px"></a></li>
+		<li style="float:right;"><a href="dashboard.html"><img src="icon/user1.png" width="25px" height="25px"></a></li>
+	</ul>
+	
+	
+	<h1 style="text-align:left; padding-left:10px; color:white;">Room Cart</h1>
+	<hr style="border:1px dashed lightgrey;"><br>
+		<div style="height:350px; width:60%; border:1px solid white; float:left; margin-left:8%; background-color:white; border-radius:15px;">
+			<img src="img/sign.jpg" style="width:450px; height:310px; float:left; padding:20px;">
+			<div id="menu-desc"><br>
+				<div class="actions"><a href="#" style="float:right; margin-right:10px; text-decoration:none; color:white; background-color:red; padding:10px; border-radius:10px;">Delete</a></div>
+				<h2>Signature Room</h2>
+				<p style="font-size:15px;"><b>Details&emsp;&emsp;&emsp;&ensp;&nbsp;:</b> 2 Days 1 Nights</p> 
+				<p style="font-size:15px;"><b>Quantity&emsp;&emsp;&emsp;:</b> 12</p>
+				<p style="font-size:15px;"><b>Duration&emsp;&emsp;&emsp;:</b> 2021-09-20 until 2021-09-21</p>
+				<p style="font-size:15px;"><b>Check-In Time&nbsp;&nbsp;:</b> 1.00 p.m.</p><br>
+				<p style="font-weight:bold; font-size:25pt; float:right; padding-right:10px; padding-top:30px;">$750<span style="font-size:10pt;">/room</span></p>
+			</div>
+		</div>
+		<div style="height:350px; width:25%; border:1px solid white; margin-left:20px; background-color:white; border-radius:15px; float:left; margin-bottom:5%;">
+			<h3 style="text-align:center;">Summary</h3>
+			<p style="padding:10px;"><b>Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </b>Wee Chian Seong</p>
+			<p style="padding:10px;"><b>Phone Number : </b>017-9681149</p>
+			<p style="padding:10px;"><b>Email&emsp;&emsp;&emsp;&emsp;: </b>hochunshian29@gmail.com</p>
+			
+		</div>
+	
+	<hr style="border:1px dashed lightgrey; clear:both;">
+	
+	<a href="user_index.html"><img src="icon/home.png" width="70px" height="70px" style="padding-top:10px; margin-left:50%;"></a>
+		<a href="user_payment.html" class="button">Pay Now</a>
+		
+</body>
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <img src="img/logo.png" width="120px" height="120px" style="float:left;">
+          <span class="logo_name" style="font-size:40px;">Marina Bay</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/MaldivesInsiderTravel/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/visitmaldives?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/visitmaldives/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/watch?v=JXGd7PB4UYY"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+	          <ul class="box">
+          <li class="link_name">Address</li>
+          <li><p style="color:#fff; font-size:14px;">10 Bayfront Ave,Gaafu Dhaalu Atoll Maguhdhuvaa Island, Maldives</p></li>
+          <li><a href="https://www.google.com/maps/place/Maguhdhuvaa/@0.2778,73.354649,17z/data=!3m1!4b1!4m15!1m9!3m8!1s0x3b4aa21037b85ff9:0x5f4d2949e658a8a8!2sAyada+Maldives!5m2!4m1!1i2!8m2!3d0.2787213!4d73.3572387!3m4!1s0x3b4aa2102f6e23b9:0x1fd632e4acd3dc2!8m2!3d0.2774626!4d73.3568696">Get Direction</a></li>
+        </ul>
+		        <ul class="box">
+          <li class="link_name">Reservation</li>
+          <li><a href="tel:+65 6688 8866"><img src="icon/phone.png" width="30px" height="30px" style="float:left;">+65 6688 8866</li>
+          <li><a href="mailto:reservation@marinabay.com"><img src="icon/mail.png" width="30px" height="30px" alt="" style="float:left;">reservation@marinabay.com</a></li>
+        </ul>
+		
+        <ul class="box">
+          <li class="link_name">Hotel</li>
+          <li><a href="user_index.html">Home</a></li>
+          <li><a href="user_rooms.html">Rooms</a></li>
+          <li><a href="user_about.html">About us</a></li>
+          <li><a href="user_contact.html">Contact us</a></li>
+		  <li><a href="user_comment&rating.html" target="_blank">Reservation&Feedback</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe Newsletter</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="user_index.html">Marina Bay.</a></span>
+        <span class="policy_terms">
+          <a href="user_privacy.html" target="_blank">Privacy policy</a>
+          <a href="user_term&condition.html" target="_blank">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>

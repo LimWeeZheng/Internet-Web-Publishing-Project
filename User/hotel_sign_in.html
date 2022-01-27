@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+<title> Sign Up </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<style>
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(img/register.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+}
+
+	  
+#main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 700px;
+	padding: 80px 40px;
+	background: rgba(0, 0, 0, 0.5);
+	color:white;
+}  
+img.logo{width:250px;
+    height:250px;
+	}
+p.input{text-align:left;
+        width:350px;
+
+        }	
+
+a.login-button{
+		  background-color:green;
+		  border-width:3px;
+		  height:30px;
+		  border-color:red;
+		  width:250px;
+		  overflow:auto;
+		  text-align:center;
+		  font-weight:bold;
+		  font-size:20px;
+		  text-decoration:none;
+		  color:white;
+		  border-radius:5px;
+		  }	
+		  
+a.login-button:hover
+{background-color:blue;
+
+cursor:pointer;}
+
+p.check-box
+{
+    text-align:left;
+}
+
+
+</style>
+
+</head>
+
+<body >
+<div id="main">
+<form name="register_form" action="">
+<center><img class="logo" src="img/logo.png">
+<h2 align="center">Register Now </h2>
+
+<p class="input"> Username:<br><input type="text" name="user_name" placeholder="Name"size="50" required></p>
+<p class="input"> Email :<br><input type="email" name="user_password" placeholder="Email" size="50" required> </p>
+<p class="input"> Contact Number :<br><input type="text" name="user_contact" placeholder="Contact Number" size="50" required 
+                  pattern="[0-9]{3}-[0-9]{7}" title="must type in number. exp:xxx-xxxxxxx" ></p>
+				  
+<p class="input"> Password :<br><input type="password" name="user_email" placeholder="Password" size="50" pattern="[A-z a-z]{6} [0-9]{4}"
+   title="Must contain at least 6 alphabet and 4 numbers" required></p>
+
+<p class="input"> Confirm Password :<br><input type="password" name="user_comfirm_password" placeholder="Confirm Password" size="50" pattern="[A-z a-z]{6} [0-9]{4}"
+   title="Must contain at least 6 alphabet and 4 numbers" required></p>
+   
+<p class="check-box">
+<input type="checkbox" name="user_subject" value="DPD" required>I Agree To The Term &amp; Conditions
+
+<br>
+<p><a class="login-button" href="user_index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+<br>
+
+
+</form>
+<a href="index.html"><img src="icon/home.png" width="40px" height="40px" style="margin:auto;"></a>
+</div>
+
+</body>
+</html>

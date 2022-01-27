@@ -1,0 +1,39 @@
+.header-area{background-size:cover;
+			 background-position:100%;
+			 background-repeat:no-repeat;
+			 min-height:10%;
+			 overflow-x:hidden;
+			 overflow-y:hidden;}
+
+.header_post{position:absolute;
+			 height:97.5%;
+			 width:100%;
+			 max-height:100%;
+			 max-width:100%;
+			 top:10;
+			 left:0;
+			 background:rgba(0,0,0,0.4);
+			 color:white;
+			 display:flex;
+			 align-items:center;
+			 justify-content:center;
+			 flex-direction:column;}
+
+.header_post h1{font-family:Brush Script MT;
+				position:sticky;
+				letter-spacing:0px;
+				margin:0px 0px 5px; 
+				font-size:50pt;}
+
+.header_post p{position:sticky;
+			   top:70%;
+			   margin:0px; 
+			   font-size:20pt;
+			   font-family:Gabriola;}
+
+.header_post img{position:sticky;
+				 width:200px;
+				 height:200px;}
+				   
+.head img{height:97.5vh;
+		  width:100vw;}

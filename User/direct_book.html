@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<html lang="en" dir="ltr">
+<head> <title> Hotel Registration Form</title>
+ 
+<style>
+
+body{background-color:#afafb6;;
+	 }
+
+#main{background-color:skyblue;
+      width:600px;
+	  border:2px solid black;
+	  margin-left:500px;
+	  border-radius:10px;
+	  margin-bottom:5px;
+	  }
+	  
+img.logo{width:200px;
+    height:200px;
+
+	}
+
+p.input{text-align:left;
+         width:400px;
+        }	
+
+
+
+p.check-box
+{
+    text-align:left;
+}
+
+p.label{ display:inline-block;margin-right:10px;
+         display:inline-block;
+	     text-align:left;
+		 float:left;
+		 margin-left:100px;
+		
+		}
+		
+p.check{ display:inline-block;margin-right:10px;
+         display:inline-block;
+	     text-align:left;
+		 margin-left:70px;
+		}
+
+input[name=agree_box]	
+{
+	margin-left:200px;
+}
+
+#choose{margin-right:9cm;}
+a.sign-up{
+		  background-color:green;
+		  border-width:3px;
+		  height:30px;
+		  border-color:red;
+		  width:400px;
+		  overflow:auto;
+		  text-align:center;
+		  font-weight:bold;
+		  font-size:20px;
+		  text-decoration:none;
+		  color:white;
+		  border-radius:5px;
+		  }	
+		  
+a.sign-up{
+		  background-color:green;
+		  border-width:3px;
+		  height:30px;
+		  border-color:red;
+		  width:400px;
+		  overflow:auto;
+		  text-align:center;
+		  font-weight:bold;
+		  font-size:20px;
+		  text-decoration:none;
+		  color:white;
+		  border-radius:5px;
+		  }	
+a.sign-up:hover{
+		  background-color:red;
+		  text-decoration:none;
+		  color:white;
+		  border: 3px dotted white;
+		  }	
+.button {
+  background-color: #4CAF50;
+  border: 1px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float:right;
+  margin-top:20px;
+  border-radius:5px;
+}
+.button:hover {
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+  text-decoration: none;
+}
+</style>
+
+</head>
+
+<body >
+<div id="main">
+<form name="register_form" action="">
+<center><img class="logo" src="img/logo.png">
+<h2 align="center">Hotel Guest Registration Form </h2>
+
+<p class="label">First name:<br><input type="text" name="user_name" placeholder="First Name" size="20" required></p>
+
+<p class="label">Last name:<br><input type="text" name="user_name" size="20" placeholder="Last Name" required></p>
+
+<p class="input"> Contact Number :<br><input type="text" name="user_contact" placeholder="Contact Number" size="50" required
+                  pattern="[0-9]{3}-[0-9]{7}" title="must type in number. exp:xxx-xxxxxxx"></p>
+
+<p class="input"> Email :<br><input type="email" name="user_email" placeholder="Email" size="50" required> </p>
+
+<p class="check"> Check-in Date<br><input type="date" name="arrival_date" placeholder="Arrival Date" size="50" required> </p>
+<p class="check"> Check-in Time :<br><input type="time" name="check_in time" placeholder="Number Adult" size="50" required></p>
+
+<p class="check"> Check-out Date<br><input type="date" name="departure_date" placeholder="Departure Date" size="50" required> </p>
+<p class="check"> Check-out Time :<br><input type="time" name="check_out time" placeholder="Number Adult" size="50" required></p>
+
+
+
+<p class="input"> Number of adults :<br><input type="number" name="number_adult" placeholder="Number Adult" size="50" required></p>
+   
+<p class="input"> Number of children :<br><input type="number" name="number_children" placeholder="Number Children" size="50" required></p>
+<p class="input">Quantity :<br><input type="number" name="room_quantity" min="0" max="50" value="1" style="width:100px;"></p>
+<p class="choose-room">
+<p id="choose">Choose your room :</p>
+<input type="checkbox" name="room1" >Superior Room
+<input type="checkbox" name="room2" >Deluxe Room
+<input type="checkbox" name="room3" >Couple Room
+<input type="checkbox" name="room4" >Signature Room
+</p>
+
+<br>
+
+<p class="check-box">
+<input type="checkbox" name="agree_box" required>I Agree To The Term &amp; Conditions
+<br>
+</p>
+<br>
+
+<p><a class="sign-up" href="public_payment.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay Now&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+
+<br>
+</div>
+<a href="public_rooms.html" class="button">BACK</a>
+<br><br>
+</form>
+
+</div> 
+
+</body>
+
+</html>
